@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients Management System </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h3 id="site-name">Patients Management System</h3>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Add New Patient</h2>
+            <form id="form">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="chronic-disease">Chronic Disease:</label>
+                <select id="chronic-disease" name="chronic-disease">
+                    <option value="none">None</option>
+                    <option value="diabetes">Diabetes</option>
+                    <option value="hypertension">Hypertension</option>
+                    <option value="asthma">Asthma</option>
+                    <option value="arthritis">Arthritis</option>
+                </select>
+
+                <button type="submit" id="btn">send</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="card-container"></div>
+
+    <footer>
+        <p>&copy; 2024 Patients Management System </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
